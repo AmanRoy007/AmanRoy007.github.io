@@ -1,0 +1,33 @@
+.hero-carousel-container{
+    height: 100vh;
+    position: relative;
+
+    .carousel{
+        height: 100% !important;
+    }
+    *.carousel-cell .carousel-cells{
+        width: 100% !important;
+    }
+    .carousel-img{
+        object-fit: cover !important;
+    }
+
+    .movie-info-container{
+        position: absolute;
+        top: 50%;
+        transform: translatey(-50%);
+        padding: 10px 30px;
+
+        .movie-name{
+            font-size: 40px;
+            font-weight: 700;
+            text-transform: uppercase;
+            letter-spacing: 3px;
+        }
+
+        .six-logo{
+            font-size: 55px;
+            color: #48c70b;
+        }
+    }
+}

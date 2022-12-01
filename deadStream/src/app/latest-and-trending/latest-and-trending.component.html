@@ -1,0 +1,23 @@
+<div class="movie-cards-section">
+    <div class="container">
+        <div class="title-section flex justify-between items-center">
+            <h2 class="section-title">{{sectionTitle}}</h2>
+            <a href="#" class="view-link">{{viewLink}}</a>
+        </div>
+    <swiper
+    [config]="config"
+    [loop]="true" [navigation]="true" class="swipper-container">
+      <ng-template swiperSlide *ngFor="let data of moviesDataObject">
+        <div class="card-container">
+        <div class="img-wrapper">
+            <img [src]="data.imagePath" alt="" class="movie-img">
+            <a href="" class="movie-link"></a>
+        </div>
+        <p class="movie-subInfo">{{data.movieReleasedDate}}</p>
+        <h4 class="movie-name">{{data.movieName}}</h4>
+        <p class="movie-subInfo">{{data.movieCatgory}}</p>
+    </div>
+</ng-template>
+    </swiper>
+    </div>
+</div>

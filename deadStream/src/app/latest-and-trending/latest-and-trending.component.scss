@@ -1,0 +1,58 @@
+.movie-cards-section {
+    padding: 70px 34px 0 34px;
+
+
+    .swipper-container.swiper{
+        .swiper-button-prev, .swiper-button-next{
+            top: 20px;
+
+            &::after{
+                font-size: 20px;
+                color: #9ca3af;
+            }
+        }
+
+        .swiper-button-prev{
+            right: 40px;
+            left: unset;
+        }
+    }
+
+    .swipper-container.swiper .swiper-wrapper .swiper-slide .card-container {
+        padding-top: 58px;
+        .img-wrapper {
+            height: 270px;
+            position: relative;
+            margin-bottom: 18px;
+        }
+
+        .movie-img {
+            border-radius: 20px;
+            width: 100% ;
+            height: 100%;
+            object-fit: cover;
+        }
+
+        .movie-link {
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+        }
+
+        .movie-name {
+            font-size: 20px;
+            font-weight: 700;
+            padding: 6px 0;
+        }
+
+        .movie-subInfo {
+            color: #9ca3af;
+            font-size: 14px;
+            font-weight: 500;
+        }
+    }
+
+    
+}
